@@ -23,5 +23,10 @@ qemu-system-x86_64 -machine q35 -m 1024 -smp cpus=2 -cpu qemu64 \
 #TEST Function
 gradle test --tests DispatchingFunctionsIntegrationTests
 
+#ToDo: TESTS
+gradle test --tests FunctionsStreamIntegrationTests
 
 
+#RabbitMQ Objects
+Input Exchange: order-accepted - Queue: order-accepted.dispacher-service
+Output Exchange: order-dispatched - Queue: order-dispatche.order-service
